@@ -1,7 +1,6 @@
 import React from "react";
-import ReactMde from "react-mde";
-import "react-mde/lib/styles/css/react-mde-all.css";
 import ReactMarkdown from "react-markdown";
+import ReactMde from "react-mde";
 
 export default function App() {
   const [value, setValue] = React.useState("**Hello world!!!**");
