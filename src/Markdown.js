@@ -5,7 +5,7 @@ import ReactMde from "react-mde";
 const Markdown = () => {
   const [value, setValue] = React.useState("**Hello world!!!**");
   return (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
+    <div className="markdown" style={{ display: "flex", justifyContent: "space-between" }}>
       <div style={{ width: "50%", marginRight: 10 }}>
         <ReactMde value={value} onChange={setValue} />
       </div>
