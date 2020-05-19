@@ -1,12 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Header from './Header'
+import Aside from './Aside'
+import Markdown from './Markdown'
+import Footer from './Footer'
 import "react-mde/lib/styles/css/react-mde-all.css";
-import './custom.css';
+import './assets/css/App.css'
+import './assets/css/style.css'
+
+const element = (
+  <div id="container">
+    <Header />
+    <Aside />
+    <Markdown />
+    <Footer />
+  </div>
+)
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  element,
   document.getElementById('root')
-);
+)

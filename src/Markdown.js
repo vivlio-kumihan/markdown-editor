@@ -2,7 +2,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import ReactMde from "react-mde";
 
-export default function App() {
+const Markdown = () => {
   const [value, setValue] = React.useState("**Hello world!!!**");
   return (
     <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -10,9 +10,11 @@ export default function App() {
         <ReactMde value={value} onChange={setValue} />
       </div>
       <div style={{ width: "50%" }}>
-        Preview
+        <h3>Preview</h3>
         <ReactMarkdown source={value} />
       </div>
     </div>
-  );
+  )
 }
+
+export default Markdown

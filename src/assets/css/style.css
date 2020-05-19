@@ -1,8 +1,13 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: khaki;
 }
 
 textarea {
   font-size: 1.1em;
+}
+
+h3 {
+  color: aqua;
 }
