@@ -77,35 +77,25 @@ a.fab {
 /* ///////////////////////////////////////// Markdown */
 .markdown {
   grid-area: markdown;
-  margin-top: 1rem;
+  margin: 1rem 1rem 1rem 0;
   width: auto;
+  height: 100%;
 }
-
-.markdown.container {
-  display: flex;
-  flex-direction: row;
+/* 
+.w-md-editor.w-md-editor-show-live {
+  min-height: 28rem;
 }
-
-.markdown.container > * {
-  flex: 1 1 50%;
+ */
+/* 
+ .w-md-editor-content {
+  min-height: 26rem;
 }
-
-.markdown textarea {
-  min-height: 100vh;
-}
-
-/* .markdown > * {
-  width: "50%";
-} */
-
-/* .edit {
-  margin-right: 1rem;
-} */
-
-textarea {
+ */
+/* .markdown textarea {
   font-family: inherit;
+  font-size: 1.2rem;
+  line-height: 2rem;
   color: inherit;
-  font-size: 0.9rem;
-    overflow: auto;
-	height: auto;
-}
+} */
+
+/* background-color: rgba(247, 247, 203, 0.2); */
