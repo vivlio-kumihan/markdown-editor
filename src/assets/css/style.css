@@ -4,6 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900");
 
+/* ///////////////////////////////////////// body */
+body {
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 13pt;
+  line-height: 1.2rem;
+  color: rgba(105, 115, 120, 1);
+}
+
 /* ///////////////////////////////////////// #container */
 #container {
   display: grid;
@@ -12,7 +20,7 @@
         "header header"
         "aside markdown"
         "footer footer";
-  column-gap: 20px;
+  column-gap: 1em;
   width: 95%;
   margin: 0px auto;
 }
@@ -56,27 +64,48 @@ a.fab {
 
 .aside {
   grid-area: aside;
-}
-
-/* ///////////////////////////////////////// Markdown */
-.markdown {
-  grid-area: markdown;
+  background-color: rgba(245, 106, 106, 0.2);
 }
 
 /* ///////////////////////////////////////// footer */
 .footer {
   grid-area: footer;
+  height: 3rem;
+  background-color: rgba(60, 30, 30, 1);
 }
 
+/* ///////////////////////////////////////// Markdown */
+.markdown {
+  grid-area: markdown;
+  margin-top: 1rem;
+  width: auto;
+}
 
+.markdown.container {
+  display: flex;
+  flex-direction: row;
+}
 
+.markdown.container > * {
+  flex: 1 1 50%;
+}
 
+.markdown textarea {
+  min-height: 100vh;
+}
 
+/* .markdown > * {
+  width: "50%";
+} */
 
-
-
-
+/* .edit {
+  margin-right: 1rem;
+} */
 
 textarea {
-  font-size: 1.1em;
+  font-family: inherit;
+  color: inherit;
+  font-size: 0.9rem;
+    overflow: auto;
+	height: auto;
 }
