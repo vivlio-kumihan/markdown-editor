@@ -9,7 +9,7 @@ body {
   font-family: "M PLUS 1p", sans-serif;
   font-size: 13pt;
   line-height: 1.4rem;
-  color: rgba(105, 115, 120, 1);
+  color: rgba(45, 40, 40, 1);
 }
 
 /* ///////////////////////////////////////// #container */
@@ -61,7 +61,6 @@ a.fab {
 }
 
 /* ///////////////////////////////////////// aside */
-
 .aside {
   grid-area: aside;
   background-color: rgba(245, 106, 106, 0.2);
@@ -75,33 +74,16 @@ a.fab {
 }
 
 /* ///////////////////////////////////////// Markdown */
-.markdown {
-  grid-area: markdown;
-  margin: 1rem 0.5rem 1rem 0;
-  width: auto;
-  height: 100%;
-}
-/* 
-.w-md-editor.w-md-editor-show-live {
-  min-height: 28rem;
-}
- */
-/* 
-.w-md-editor-content {
-  min-height: 26rem;
-}
- */
-/* .markdown textarea {
-  font-family: inherit;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  color: inherit;
-} */
-
-/* background-color: rgba(247, 247, 203, 0.2); */
-
 #simple-mde {
-  color: inherit;
+  grid-area: markdown;
+  margin: 1rem 0.5rem 0 0;
+  width: auto;
+}
+
+/* font color in textarea */
+.CodeMirror {
+  color: rgba(45, 40, 40, 1);
+  height: 500px;
 }
 
 #simple-mde h1, 
@@ -113,7 +95,6 @@ a.fab {
     font-weight: 700;
     line-height: inherit;
 }
-
 #simple-mde h1 {
   font-size: 1.7rem;
   line-height: 2rem;
