@@ -5,6 +5,7 @@ import Aside from './Aside'
 import MDEdit from './MDEdit'
 import Footer from './Footer'
 import './assets/css/reset.css'
+import "easymde/dist/easymde.min.css"
 import './assets/css/style.css'
 
 const element = (
