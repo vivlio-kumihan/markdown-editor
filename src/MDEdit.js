@@ -1,29 +1,18 @@
-import React from "react";
-import MDEditor from '@uiw/react-md-editor';
-// import MDEditor, { commands } from '@uiw/react-md-editor';
-
-import './assets/css/style.css'
+import React, {useState} from "react"
+import SimpleMDE from "react-simplemde-editor"
 
 const MDEdit = () => {
-  const [value, setValue] = React.useState("# Hello!");
+  const [markdown, setMarkdown] = useState("")
   return (
-    <div className="markdown">
-      <MDEditor
-        value={value}
-        onChange={setValue}
-        height={550}
-        tabSize={4}
-        // commands={[
-        //   commands.bold, commands.hr, commands.italic, commands.divider, 
-        //   commands.codeEdit, commands.codeLive, commands.codePreview, commands.divider,
-        //   commands.fullscreen,
-        // ]}
-      />
+    <div id="simple-mde">
+    <SimpleMDE  onChange={(e) => setMarkdown(e)}
+                options={{spellChecker: false}}
+    />
     </div>
-  );
+  )
 }
 
 export default MDEdit
 
-// <MDEditor.Markdown source={value} />
-// style={{ minHeight: "100vh" }}
+// OPTIONS | SimpleMDE - Markdown Editor
+// https://developer.aliyun.com/mirror/npm/package/simplemde

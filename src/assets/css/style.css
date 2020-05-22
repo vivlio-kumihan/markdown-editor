@@ -8,7 +8,7 @@
 body {
   font-family: "M PLUS 1p", sans-serif;
   font-size: 13pt;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   color: rgba(105, 115, 120, 1);
 }
 
@@ -87,7 +87,7 @@ a.fab {
 }
  */
 /* 
- .w-md-editor-content {
+.w-md-editor-content {
   min-height: 26rem;
 }
  */
@@ -99,3 +99,36 @@ a.fab {
 } */
 
 /* background-color: rgba(247, 247, 203, 0.2); */
+
+#simple-mde {
+  color: inherit;
+}
+
+#simple-mde h1, 
+#simple-mde h2, 
+#simple-mde h3, 
+#simple-mde h4, 
+#simple-mde h5 {
+    font-family: inherit;
+    font-weight: 700;
+    line-height: inherit;
+}
+
+#simple-mde h1 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+#simple-mde h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+#simple-mde h3 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+#simple-mde h4 {
+  font-size: 1.1rem;
+}
+#simple-mde h5 {
+  font-size: 0.9rem;
+}
