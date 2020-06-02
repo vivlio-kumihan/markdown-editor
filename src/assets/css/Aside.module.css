@@ -1,0 +1,9 @@
+.wrapper {
+  grid-area: aside;
+  background-color: rgba(245, 106, 106, 0.2);
+}
+
+.headingEXBold {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 900;
+}

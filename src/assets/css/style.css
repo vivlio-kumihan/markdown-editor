@@ -60,18 +60,8 @@ a.fab {
   color: inherit;
 }
 
-/* ///////////////////////////////////////// aside */
-.aside {
-  grid-area: aside;
-  background-color: rgba(245, 106, 106, 0.2);
-}
 
-/* ///////////////////////////////////////// footer */
-.footer {
-  grid-area: footer;
-  height: 3rem;
-  background-color: rgba(60, 30, 30, 1);
-}
+
 
 /* ///////////////////////////////////////// Markdown */
 #simple-mde {

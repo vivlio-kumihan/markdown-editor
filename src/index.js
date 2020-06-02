@@ -13,6 +13,7 @@ const element = (
     <Header />
     <Aside />
     <MDEdit />
+    <img src="/images/logo512.png" />
     <Footer />
   </div>
 )
