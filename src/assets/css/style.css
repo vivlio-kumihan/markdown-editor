@@ -25,43 +25,9 @@ body {
   margin: 0px auto;
 }
 
-/* ///////////////////////////////////////// header */
 .header {
   grid-area: header;
-  display: flex;
-  flex-flow: row wrap-reverse;
-  align-items: flex-start;
-  padding-bottom: 1em;
-  height: 60px;
-  border-bottom: solid 5px rgba(245, 106, 106, 1);
 }
-
-.header > * {
-  flex-grow: 1;
-  margin-bottom: 0;
-}
-
-/* logo */
-.header .logo {
-  border-bottom: 0;
-  color: inherit;
-  font-family: "Roboto Slab", serif;
-  font-size: 1.125em; 
-}
-
-/* icon */
-.icon {
-  text-align: right;
-}
-/* originはリスト構造になっていたが、
-tagづけを試しにanchorでやっている。 */
-a.fab {
-  margin-left: 10px;
-  color: inherit;
-}
-
-
-
 
 /* ///////////////////////////////////////// Markdown */
 #simple-mde {

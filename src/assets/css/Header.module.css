@@ -1,3 +1,37 @@
-.header {
-  font-weight: 900;
+.wrapper {
+  grid-area: header;
+  display: flex;
+  flex-flow: row wrap-reverse;
+  align-items: flex-start;
+  padding-bottom: 1rem;
+  height: 5rem;
+  border-bottom: solid 5px rgba(245, 106, 106, 1);
 }
+
+.wrapper > * {
+  flex-grow: 1;
+  margin-bottom: 0;
+}
+
+/* logo */
+
+.wrapper .logo {
+  border-bottom: 0;
+  color: inherit;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.125em; 
+}
+
+/* icon */
+.icon {
+  text-align: right;
+}
+
+/* originはリスト構造になっていたが、
+tagづけを試しにanchorでやっている。 */
+
+.icon a {
+  margin-left: 1rem;
+  color: inherit;
+}
+
